@@ -69,6 +69,7 @@ bool segmentsIntersect(const Vec3D& a1, const Vec3D& a2, const Vec3D& b1, const 
         return false;
     }
     
+    
     double t = ((b1[0] - a1[0]) * d2[1] - (b1[1] - a1[1]) * d2[0]) / det;
     double u = ((b1[0] - a1[0]) * d1[1] - (b1[1] - a1[1]) * d1[0]) / det;
     
@@ -318,4 +319,3 @@ int main() {
 
     return 0;
 }
-
